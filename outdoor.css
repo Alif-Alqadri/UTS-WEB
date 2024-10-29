@@ -1,0 +1,305 @@
+/* Global styles */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tambahkan padding-top pada setiap section untuk menghindari potongan */
+section {
+    padding-top: 80px; /* Sesuaikan dengan tinggi header */
+    margin-top: -100px; /* Sesuaikan dengan tinggi header untuk menghindari celah */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 5px; /* Space for the fixed header */
+    background-color: #f4f4f4;
+    margin-top: 50px; /* Sesuaikan dengan tinggi header */
+}
+
+/* Header styles */
+header {
+    background-color: #FF7F00; /* Orange color */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk judul toko */
+.site-title {
+    margin-bottom: 20px; /* Tambahkan spasi bawah judul */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+header nav ul li a:hover {
+    background-color: #ffffff;
+    color: #FF7F00;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+header h1:hover {
+    
+    color: #000000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* Profil pengguna */
+.user-profile {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px; /* Space below the header */
+    background-image: url('path_to_your_background_image.jpg'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Menyesuaikan gambar dengan ukuran kontainer */
+    padding: 20px; /* Tambahkan padding untuk memperbesar area */
+}
+
+.search-box {
+    width: 50%; /* Ukuran search box yang diperbesar */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FF7F00;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-button:hover {
+    background-color: #FF8C00;
+}
+
+/* Carousel styles */
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.menu-item img {
+    width: 300px; /* Ukuran gambar yang diperbesar */
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* Video frame */
+#video-promo .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#video-promo video {
+    max-width: 300%;
+    height: auto;
+}
+
+.photo-gallery img {
+    width: 200px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+    object-fit: cover; /* Agar gambar tidak terdistorsi */
+    margin: 10px;
+    border-radius: 15px; /* Melengkungkan ujung gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #FF7F00;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 200px; /* Responsive column */
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+}
+
+/* Additional styles for the carousel navigation buttons */
+.product-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.product-navigation button {
+    background-color: #FF7F00;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-navigation button:hover {
+    background-color: #f68b00;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px; /* Increased max width for larger screens */
+    margin: auto;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 80%; /* Make search box wider on small screens */
+        margin-bottom: 10px;
+    }
+
+    .carousel {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .menu-item {
+        margin: 0 auto; /* Center items on small screens */
+    }
+
+    iframe {
+        height: 300px; /* Adjust video height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px; /* Reduce font size for mobile */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer columns on small screens */
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px; /* Space between footer columns */
+    }
+}
+
+/* Hover effect for profile picture */
+.profile-picture:hover {
+    opacity: 0.8; /* Slightly fade the profile picture on hover */
+}
+
+/* Ensure the page has a clear separation between sections */
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Add styles for the 'Edit Profile' button */
+.edit-profile-button {
+    background-color: white;
+    color: #FF7F00;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-profile-button:hover {
+    background-color: #FF8C00;
+    color: white;
+}
