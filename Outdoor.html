@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Gear Shop</title>
+    <link rel="stylesheet" href="css/outdoor.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+</head>
+<body>
+    <header>
+        <h1>KONGSI OUTDOOR GEAR SHOP</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#video-promo">Promo Terbaru</a></li> <!-- Tambahan navigasi -->
+                <li><a href="#gallery">Daftar Gunung</a></li> <!-- Tambahan navigasi -->
+                <li><a href="#hours">Jam Operasional</a></li>
+                <li><a href="#location">Lokasi</a></li>
+            </ul>
+        </nav>
+
+        <!-- Profil Pengguna di sebelah kanan atas -->
+        <div class="user-profile">
+            <img src="assets/img/logo.jpg" alt="Profil Pengguna" class="profile-picture">
+            <span class="user-name">Kongsi Outdoor</span>
+        </div>
+    </header>
+
+    <!-- Kolom pencarian di bawah header -->
+    <div class="search-container">
+        <input type="text" placeholder="Cari alat outdoor..." class="search-box">
+        <button class="search-button">Cari</button>
+    </div>
+
+    <!-- Section lainnya tetap sama seperti yang sudah ada -->
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami menyediakan berbagai alat outdoor untuk pembelian dan penyewaan. Mulai dari tenda, ransel, hingga alat hiking, semua tersedia untuk mendukung petualangan alam Anda.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2 style="text-align: center;">Katalog Penjualan - Pria & Wanita</h2>
+            
+            <div class="product-navigation">
+                <button class="prev-button">⟨ Sebelumnya</button>
+                <button class="next-button">Berikutnya ⟩</button>
+            </div>
+
+            <div class="carousel">
+                <div class="menu-item">
+                    <img src="assets/img/tenda pria.jpeg" alt="Tenda Pria">
+                    <h3>Tenda Pria</h3>
+                    <p>Tenda khusus pria dengan fitur maskulin dan tahan lama.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/img/ransel pria.jpeg" alt="Ransel Pria">
+                    <h3>Ransel Pria</h3>
+                    <p>Ransel hiking pria dengan kapasitas besar dan desain sporty.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/img/sleeping bag pria.jpeg" alt="Sleeping Bag Pria">
+                    <h3>Sleeping Bag Pria</h3>
+                    <p>Sleeping bag yang cocok untuk cuaca dingin, dirancang khusus untuk pria.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="assets/img/tenda wanita.jpeg" alt="Tenda Wanita">
+                    <h3>Tenda Wanita</h3>
+                    <p>Tenda dengan desain modern dan elegan, khusus wanita petualang.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/img/ransel wanita.jpeg" alt="Ransel Wanita">
+                    <h3>Ransel Wanita</h3>
+                    <p>Ransel ringan dan nyaman, dirancang khusus untuk wanita.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/img/sleeping bag wanita.jpeg" alt="Sleeping Bag Wanita">
+                    <h3>Sleeping Bag Wanita</h3>
+                    <p>Sleeping bag yang hangat dan stylish, sempurna untuk wanita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-promo"> <!-- Mengarahkan ke Promo Terbaru -->
+        <div class="container">
+            <h2 style="text-align: center;">Promo Terbaru</h2>
+            <video controls>
+                <source src="Video/promosi.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="gallery"> <!-- Mengarahkan ke Daftar Gunung -->
+        <div class="container">
+            <h2 style="text-align: center;">Pemandangan Alam</h2>
+            <div class="photo-frame">
+                <div class="photo-gallery">
+                    <img src="assets/img/everest.jpg" alt="Pemandangan 1">
+                    <img src="assets/img/pemandangan2.jpg" alt="Pemandangan 2">
+                    <img src="assets/img/pemandangan3.jpg" alt="Pemandangan 3">
+                    <img src="assets/img/pemandangan4.jpg" alt="Pemandangan 4">
+                    <img src="assets/img/pemandangan5.jpg" alt="Pemandangan 5">
+                    <img src="assets/img/pemandangan6.jpg" alt="Pemandangan 6">
+                    <img src="assets/img/pemandangan7.jpg" alt="Pemandangan 7">
+                    <img src="assets/img/pemandangan8.jpg" alt="Pemandangan 8">
+                    <img src="assets/img/pemandangan9.jpg" alt="Pemandangan 9">
+                    <img src="assets/img/pemandangan10.jpg" alt="Pemandangan 10">
+                </div>
+            </div>
+    
+            <h2 style="text-align: center; margin-top: 40px;">Daftar Seven Summit Dunia</h2>
+            <table style="width: 100%; margin-top: 20px; text-align: left; border-collapse: collapse; background-color: #fff;">
+                <thead>
+                    <tr style="background-color: #FF7F00; color: white;">
+                        <th style="padding: 10px;">No</th>
+                        <th style="padding: 10px;">Nama Seven Summit Dunia</th>
+                        <th style="padding: 10px;">Ketinggian (m)</th>
+                        <th style="padding: 10px;">Maps</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">1</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Mount Everest</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">8,848</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="https://maps.app.goo.gl/teY9KuchoE4QsiEC6" target="_blank">Lihat di Maps</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">2</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Aconcagua</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">6,961</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="https://maps.app.goo.gl/q9RmabQp5UJkpS8RA" target="_blank">Lihat di Maps</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">3</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Denali</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">6,190</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="https://maps.app.goo.gl/4SyKEHsaEhN7Uvws5" target="_blank">Lihat di Maps</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">4</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Kilimanjaro</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">5,895</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="https://maps.app.goo.gl/vjpj8DpTsWVaS8jU8" target="_blank">Lihat di Maps</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">5</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Elbrus</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">5,642</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="https://maps.app.goo.gl/RteUzbNP69CiYw8y6" target="_blank">Lihat di Maps</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">6</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Vinson Massif</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">4,892</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="https://maps.app.goo.gl/B5zTo4i8CQP7Zzz96" target="_blank">Lihat di Maps</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">7</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Puncak Jaya</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">4,884</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="https://maps.app.goo.gl/nN821scMQJ8obr5c6" target="_blank">Lihat di Maps</a></td>
+                    </tr>
+
+                    <!-- Baris lainnya -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="hours">
+        <div class="container">
+            <h2 style="text-align: center;">Jam Operasional</h2>
+            <p style="text-align: center;">Senin - Jumat: 08.00 - 21.00</p>
+            <p style="text-align: center;">Sabtu - Minggu: 09.00 - 22.00</p>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <h2>Lokasi Toko</h2>
+            <p>Outdoor Gear Shop berlokasi di: <strong>Jl. Petualang No. 456, Makassar</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>Hubungi Kami</h3>
+                <p>Email: kongsioutdoorgear@gmail.com</p>
+                <p>Telepon: +62 812 3456 7890</p>
+                <p>Alamat: Jl. Petualang No. 456, Makassar</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sosial Media</h3>
+                <p>Instagram: @Kongsioutdoorgearshop</p>
+                <p>Facebook: Kongsioutdoorgearshop</p>
+                <p>Twitter: @Kongsioutdoorgearshop</p>
+            </div>
+            <div class="footer-column">
+                <h3>Panduan</h3>
+                <ul>
+                    <li><a href="#">Panduan Belanja</a></li>
+                    <li><a href="#">Panduan Penyewaan</a></li>
+                    <li><a href="#">Kebijakan Pengembalian</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kongsi Outdoor Gear Shop | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: false
+            });
+
+            $('.prev-button').click(function(){
+                $('.carousel').slick('slickPrev');
+            });
+            $('.next-button').click(function(){
+                $('.carousel').slick('slickNext');
+            });
+        });
+    </script>
+</body>
+</html>
